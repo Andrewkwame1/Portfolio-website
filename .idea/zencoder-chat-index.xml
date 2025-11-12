@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ai.zencoder.plugin.chat.index">
-    <option name="activeChatId" value="27e1a7b1-dd4d-4b4c-9af8-97d7665f750e" />
-    <option name="chatMetadata" value="{&quot;27e1a7b1-dd4d-4b4c-9af8-97d7665f750e&quot;:{&quot;id&quot;:&quot;27e1a7b1-dd4d-4b4c-9af8-97d7665f750e&quot;,&quot;title&quot;:&quot;Code Error Analysis and Fixes&quot;,&quot;createdAt&quot;:1757262196434,&quot;updatedAt&quot;:1757262360734,&quot;isAgent&quot;:true,&quot;isNameGenerated&quot;:true,&quot;messageCount&quot;:4,&quot;lastMessagePreview&quot;:&quot;I'll open the suspicious file with the typo to check its contents, and also scan for other potential...&quot;}}" />
-  </component>
-</project>
