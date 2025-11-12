@@ -3,7 +3,25 @@
 !README.md
 !/code/
 !/documentation/
-!/.idea/
-!/.qodo/
 !/code/**
 !/documentation/**
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+
+# Environment
+.env
+.env.local
