@@ -1,0 +1,8 @@
+# Redirect rules for single-page application
+/*    /index.html   200
+
+# Security redirects
+/admin/*  https://example.com/  301!
+/wp-admin/*  https://example.com/  301!
+/.env  https://example.com/  301!
+/config/*  https://example.com/  301!

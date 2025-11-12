@@ -1,0 +1,30 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="320" fill="url(#bg)"/>
+  
+  <!-- Person silhouette -->
+  <circle cx="160" cy="120" r="40" fill="white" opacity="0.9"/>
+  <path d="M160 180C120 180 90 210 90 250V280H230V250C230 210 200 180 160 180Z" fill="white" opacity="0.9"/>
+  
+  <!-- Food technology icons -->
+  <g opacity="0.3">
+    <!-- Flask -->
+    <path d="M80 60V70L70 90C69 91 69.5 92 70.5 92H89.5C90.5 92 91 91 90 90L80 70V60H80Z" fill="white"/>
+    <!-- Molecule -->
+    <circle cx="240" cy="80" r="3" fill="white"/>
+    <circle cx="250" cy="90" r="2" fill="white"/>
+    <circle cx="230" cy="90" r="2" fill="white"/>
+    <line x1="240" y1="80" x2="250" y2="90" stroke="white" stroke-width="1"/>
+    <line x1="240" y1="80" x2="230" y2="90" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="160" y="300" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" opacity="0.8">Replace with your photo</text>
+</svg>

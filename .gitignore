@@ -1,0 +1,9 @@
+/* 
+!.gitignore
+!README.md
+!/code/
+!/documentation/
+!/.idea/
+!/.qodo/
+!/code/**
+!/documentation/**
