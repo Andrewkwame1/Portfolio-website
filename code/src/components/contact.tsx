@@ -316,6 +316,7 @@ const ContactComponent: React.FC<ContactProps> = ({ contact }) => {
                   style={createHoneypot().style}
                   tabIndex={-1}
                   autoComplete="off"
+                  aria-label="Website (hidden honeypot field)"
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">

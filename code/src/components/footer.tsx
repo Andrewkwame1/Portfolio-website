@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({ name, contact }) => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">{name}</h3>
+            <h4 className="text-2xl font-bold">{name}</h4>
             <p className="text-gray-400 leading-relaxed">
               Food Technologist passionate about innovation, sustainability,
               and quality in the food industry.
@@ -29,6 +29,8 @@ const Footer: React.FC<FooterProps> = ({ name, contact }) => {
                 whileHover={{ scale: 1.1, y: -2 }}
                 href={`mailto:${contact.email}`}
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
+                aria-label="Send email"
+                title="Send email"
               >
                 <Mail size={18} />
               </motion.a>
@@ -39,6 +41,8 @@ const Footer: React.FC<FooterProps> = ({ name, contact }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
+                  aria-label="Visit LinkedIn profile"
+                  title="Connect on LinkedIn"
                 >
                   <LinkedinIcon size={18} />
                 </motion.a>

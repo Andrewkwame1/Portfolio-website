@@ -173,6 +173,8 @@ const Hero: React.FC<HeroProps> = ({ data, scrollToSection }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300"
+                  aria-label="Visit LinkedIn profile"
+                  title="Connect on LinkedIn"
                 >
                   <LinkedinIcon size={20} />
                 </motion.a>
@@ -180,6 +182,8 @@ const Hero: React.FC<HeroProps> = ({ data, scrollToSection }) => {
                   whileHover={{ scale: 1.1, y: -2 }}
                   href={`mailto:${data.contact.email}`}
                   className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300"
+                  aria-label="Send email"
+                  title="Send email"
                 >
                   <Mail size={20} />
                 </motion.a>
@@ -262,6 +266,8 @@ const Hero: React.FC<HeroProps> = ({ data, scrollToSection }) => {
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
             onClick={() => scrollToSection('about')}
             className="text-white/60 hover:text-white transition-colors duration-300"
+            aria-label="Scroll to about section"
+            title="Scroll down to see more"
           >
             <ChevronDown size={32} />
           </motion.button>

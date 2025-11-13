@@ -1,0 +1,99 @@
+/* Mobile Menu CSS Animations */
+/* Replaces Framer Motion AnimatePresence to save ~20KiB bundle size */
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 40;
+  animation: fadeIn 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.mobile-menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 20rem; /* w-80 */
+  max-width: 85vw;
+  background-color: white;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  /* Hide off-screen by default */
+  transform: translateX(100%);
+  opacity: 0;
+  transition: none;
+  pointer-events: none;
+}
+
+/* Tablet and larger screens hide mobile menu */
+@media (min-width: 768px) {
+  .mobile-menu-backdrop,
+  .mobile-menu-panel {
+    display: none !important;
+  }
+}
+
+/* Open state */
+.mobile-menu-panel--open {
+  animation: slideInFromRight 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  pointer-events: auto;
+}
+
+/* Smooth exit animation when closing */
+.mobile-menu-panel:not(.mobile-menu-panel--open) {
+  animation: slideOutToRight 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-backdrop,
+  .mobile-menu-panel,
+  .mobile-menu-panel--open,
+  .mobile-menu-panel:not(.mobile-menu-panel--open) {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .mobile-menu-panel--open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .mobile-menu-panel:not(.mobile-menu-panel--open) {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

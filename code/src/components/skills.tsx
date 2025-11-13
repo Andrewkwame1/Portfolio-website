@@ -163,7 +163,7 @@ const Skills: React.FC = () => {
                     <span className="font-semibold text-gray-900">{skill.name}</span>
                   </div>
                   {skill.years && (
-                    <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">
+                    <span className="text-xs font-medium text-gray-700 bg-gray-200 px-2 py-1 rounded-full" title={`${skill.years} years of experience`}>
                       {skill.years}y
                     </span>
                   )}
@@ -179,7 +179,7 @@ const Skills: React.FC = () => {
                       }}
                     />
                   </div>
-                  <span className="text-xs text-gray-500 capitalize">{skill.level}</span>
+                  <span className="text-xs font-medium text-gray-700 capitalize">{skill.level}</span>
                 </div>
               </motion.div>
             );

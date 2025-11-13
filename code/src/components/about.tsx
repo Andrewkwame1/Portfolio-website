@@ -85,7 +85,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
             className="space-y-8"
           >
             <motion.div variants={itemVariants} className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">My Journey in Food Technology</h3>
+              <h2 className="text-2xl font-bold text-gray-900">My Journey in Food Technology</h2>
               <p className="text-gray-600 leading-relaxed">
                 {data.about}
               </p>
@@ -125,12 +125,12 @@ const About: React.FC<AboutProps> = ({ data }) => {
               className="relative"
             >
               {/* Main profile image container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl mx-auto">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl mx-auto aspect-square max-w-sm">
                 <ResponsiveImage
                   src="/profile-picture.jpg"
                   alt="Jihan El Kichouhi Salhi - Food Technology Professional"
                   sizes={{ xs: 256, sm: 288, md: 320 }}
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                   fallbackSrc="/profile-placeholder.svg"
                 />
 
